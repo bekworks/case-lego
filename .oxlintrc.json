@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "plugins": ["react", "typescript", "unicorn", "jsx-a11y"],
+  "env": {
+    "browser": true,
+    "es2022": true,
+    "node": true
+  },
+  "ignorePatterns": [
+    "node_modules",
+    "dist",
+    ".vite",
+    "src/routeTree.gen.ts"
+  ],
+  "rules": {
+    "no-console": "off",
+    "jsx-a11y/prefer-tag-over-role": "off"
+  }
+}
